@@ -1,0 +1,16 @@
+from tkinter import *
+window = Tk()
+window.geometry("500x500")
+window.title("Selman")
+window.configure(bg="#79D02D")
+def hello() :
+    print('Clicked')
+button1 = Button(window,text='ok',width=30,height=30,command=hello)
+button2 = Button(window,text='ok',width=30,height=30,command=hello)
+button1.grid(row=0,column=0)
+button2.grid(row=0,column=1)
+label = Label(window,text='welcome')
+# button1.pack()
+# label.pack()
+window.mainloop()
+print('hi')
